@@ -1,6 +1,6 @@
-import React from 'react';
-import { useMaster, Master } from './master';
-import { ActionListener } from './actionListener';
+import React from "react";
+import { useMaster, Master } from "./master";
+import { ActionListener } from "./actionListener";
 
 const CounterExample = () => {
   const { state, dispatch } = useMaster();
@@ -11,7 +11,7 @@ const CounterExample = () => {
         onClick={() => {
           dispatch({ type: "increment" });
         }}
-      > 
+      >
         +
       </button>
       <button onClick={() => dispatch({ type: "decrement" })}>-</button>
@@ -22,14 +22,14 @@ const CounterExample = () => {
 function App() {
   return (
     <Master>
-    <ActionListener
-      action="increment"
-      effect={() => {
-        console.log("increment action is triggered");
-      }}
-    />
-    <CounterExample />
-  </Master>
+      <ActionListener
+        action="increment"
+        effect={() => {
+          console.log("increment action is triggered");
+        }}
+      />
+      <CounterExample />
+    </Master>
   );
 }
 

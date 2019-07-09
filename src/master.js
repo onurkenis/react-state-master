@@ -19,10 +19,10 @@ export const Master = ({ children }) => {
     emitter.emit(type);
   };
 
-  const actorProvider = { state, dispatch };
+  const master = { state, dispatch };
 
   return (
-    <MasterContext.Provider value={actorProvider}>
+    <MasterContext.Provider value={master}>
       {children}
     </MasterContext.Provider>
   );
