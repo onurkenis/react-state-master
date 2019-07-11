@@ -1,4 +1,4 @@
-A playground to manage the state in <Master />, by playing with react hooks & context api. 
+A playground to manage the state in  `<Master/>`, by playing with react hooks & context api. 
 
 ### `npm start`
 
