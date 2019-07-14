@@ -30,11 +30,11 @@ export const Master = ({ children }) => {
     return newState;
   };
 
-  const [state, orginalDispatch] = useReducer(masterReducer, {});
+  const [state, originalDispatch] = useReducer(masterReducer, {});
 
   const dispatch = action => {
     const { type } = action;
-    orginalDispatch(action);
+    originalDispatch(action);
     emitter.emit(type);
   };
 
