@@ -13,7 +13,7 @@ export const Reducer = reducer => {
 };
 
 Reducer.propTypes = {
-  name: PropTypes.func,
+  name: PropTypes.string,
   action: PropTypes.string,
   handler: PropTypes.func
 };
